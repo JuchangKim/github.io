@@ -1,0 +1,66 @@
+/* Simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar li {
+    margin: 0 20px;
+  }
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .navbar li a:hover {
+    text-decoration: underline;
+  }
+  
+  .section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  .social-links a:hover {
+    color: #0077b5; /* LinkedIn Blue, or any color you like */
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+  }
+  
