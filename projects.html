@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects (Java) - Portfolio</title>
+  <!-- Link to your main portfolio stylesheet instead of minimal-table.css -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Script for forced downloads (if you still need it) -->
+  <script>
+    function forceDownload(url, filename) {
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar (adjust links to your real page names) -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-box">Home</a>
+    <a href="../about.html" class="nav-box">About Me</a>
+    <a href="../skills.html" class="nav-box">Skills</a>
+    <a href="../projects.html" class="nav-box">Projects</a>
+    <a href="../contact.html" class="nav-box">Contact Me</a>
+  </nav>
+
+  <!-- Main content container -->
+  <div class="container">
+    <h1>Projects (Java)</h1>
+    <hr />
+
+    <!-- 1. Phone Virus Simulation -->
+    <section class="project-section">
+      <h2>Phone Virus Simulation</h2>
+      <!-- Direct download link for the JAR -->
+      <p>
+        <a href="projects/java/Assignment_1_S1_Release/dist/Assignment_1_S1_Release_2_.jar" download>Download Phone Virus Simulation</a>
+      </p>
+
+      <!-- Preview video -->
+      <video width="600" controls>
+        <source src="images/MobilePhoneVirusSimulation.mp4" type="video/mp4">
+      </video>
+
+      <h3>Using Knowledge</h3>
+      <p>
+        Thread, Synchronisation, Generics, GUI, Key input, Lists, etc.
+      </p>
+
+      <h3>Explanation</h3>
+      <p>
+        There is a simulation of virus-infected phones. The blue dot is a healthy phone; 
+        the red dot is an infected phone. Infected phones must go to a repair shop at the 
+        middle top of the panel. The repair shop can only fix one phone at a time, so other 
+        infected phones must wait.
+      </p>
+      <p>
+        After a certain time, the repaired phone is released as a healthy phone, 
+        and the repair shop takes in another waiting infected phone. When you press 
+        the <strong>up arrow</strong> key, a new healthy phone is created. Press the 
+        <strong>v</strong> key to infect a healthy phone randomly. If a healthy phone 
+        is near an infected phone, it also becomes infected.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- 2. Path Finder (Binary Maze) -->
+    <section class="project-section">
+      <h2>Path Finder (Binary Maze)</h2>
+      <p>
+        <a 
+          href="projects/java/Assignment_2_S1_Release/dist/BinaryMaze.jar" download>
+          Download Binary Maze
+        </a>
+      </p>
+
+      <!-- Forced download links for text files -->
+      <ul>
+        <li>
+          <a 
+            href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
+            download
+          >
+            Maze Text File 1
+          </a>
+        </li>
+        <li>
+          <a 
+            href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt"
+            download
+          >
+            Maze Text File 2
+          </a>
+        </li>
+      </ul>
+
+      <!-- Preview video -->
+      <video width="600" controls>
+        <source 
+          src="images/Screen_Recording_2024-08-01_135208.mp4" 
+          type="video/mp4" 
+        />
+      </video>
+
+      <h3>Using Knowledge</h3>
+      <p>
+        Binary Tree, GUI, Text File Input, Lists, 
+        Traversal with Stack, Recursion, etc.
+      </p>
+
+      <h3>Explanation</h3>
+      <p>
+        The program first requests a maze text file. It reads the text and uses the data 
+        to build a binary-tree-based maze. The maze is displayed on screen, and a traversal 
+        algorithm (using recursion and stack) tries to find the exit. Once the exit is 
+        found, the path is shown in the bottom-right area.
+      </p>
+    </section>
+
+    <hr />
+
+    <p style="margin-top: 2em;">
+      <em>
+        Thanks to 
+        <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html">W3C Style Examples</a> 
+        and 
+        <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> 
+        for tutorials and code snippets.
+      </em>
+    </p>
+
+  </div> <!-- end container -->
+
+  <footer>
+    &copy; 2025 Juchang Kim. All rights reserved.
+  </footer>
+</body>
+</html>
