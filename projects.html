@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Projects (Java) - Portfolio</title>
-  <!-- Link to your main portfolio stylesheet instead of minimal-table.css -->
+  <title>My Projects</title>
+  <!-- Link to your main CSS file -->
   <link rel="stylesheet" href="styles.css" />
-  
-  <!-- Script for forced downloads (if you still need it) -->
+
   <script>
+    // (Optional) forceDownload script if you still need forced downloads
     function forceDownload(url, filename) {
       var link = document.createElement("a");
       link.href = url;
@@ -18,333 +18,374 @@
     }
   </script>
 </head>
-
 <body>
-  <!-- Navigation bar (adjust links to your real page names) -->
+  <!-- Navigation bar (adjust paths as needed) -->
   <nav class="navbar">
     <a href="index.html" class="nav-box">Home</a>
     <a href="about.html" class="nav-box">About Me</a>
     <a href="skills.html" class="nav-box">Skills</a>
-    <a href="projects.html" class="nav-box">Projects</a>
+    <a href="projects.html" class="nav-box active">Projects</a>
     <a href="contact.html" class="nav-box">Contact Me</a>
   </nav>
-  
-  <!-- Main content container -->
-  <div class="container">
-    <h1>Projects (Java)</h1>
-    <hr />
-    <!-- (C) Poker Game (GUI + Derby DB) -->
-    <article class="project-section">
-      <h3>Poker Game (GUI + Embedded Derby Database)</h3>
-      
-      <!-- Preview video -->
-      <video width="600" controls>
-        <source src="images/Assignment2-Video-PokerGame.mp4" type="video/mp4">
-      </video>
-      <br />
-      <h4>Overview</h4>
-      <p>
-        A fully functioning <strong>GUI-based Poker Game</strong> built upon OOP principles,
-        featuring an <strong>Embedded Derby Database</strong> to store user data. 
-        It extends from an earlier CLI version, adding robust GUI stages and database 
-        integration.
-      </p>
-      <br />
-      <h4>Repository Link:</h4> 
-      <a href="https://github.com/JuchangKim/PokerApp" target="_blank">
-        Poker Game Repository
-      </a>
-      <br />
 
-      <h4>Features</h4>
-      <ul>
-        <p>🎮 <strong>User-friendly GUI</strong> with multiple game stages</p>
-        <p>🛢 <strong>Embedded Derby Database</strong> (<code>POKER</code> schema) for persistent data</p>
-        <p>💾 <strong>Save &amp; Load</strong> functionality for user progress</p>
-        <p>🚪 <strong>Graceful exit</strong> without losing data</p>
-        <p>🏛 <strong>Strong OOP principles</strong> for better maintainability</p>
-        <p>📌 <strong>39 classes</strong> (excluding test classes)</p>
-      </ul>
-      
-      <h4>How to Download & Run</h4>
+  <div class="container">
+    <h1>Projects</h1>
+    <p>Here is a collection of my academic and personal projects, ranging from Java to web development and data science.</p>
+    <hr />
+
+    
+    <!-- =========================
+         2. Web Development Project: HireHub
+    ========================== -->
+    <section id="hirehub">
+      <h2>HireHub (React + Node.js + MongoDB)</h2>
       <p>
+        HireHub is a comprehensive job-hunting and career-growth platform, connecting job seekers
+        with top businesses. It features secure authentication, real-time search filters, and
+        a modern UI for job postings, company reviews, and more.
+      </p>
+
+      <h3>Features</h3>
+      <ul>
+        <li>Posting & editing job postings (CRUD via REST API)</li>
+        <li>Secure user auth with JWT</li>
+        <li>Real-time search filters (useState in React)</li>
+        <li>Mobile-responsive design</li>
+        <li>News reading & commenting</li>
+        <li>Company reviews & job preference filters</li>
+      </ul>
+
+      <h3>Live Demo</h3>
+      <p>
+        <a 
+          href="https://hirehub-bbfsh4a5feexh3gt.newzealandnorth-01.azurewebsites.net/"
+          target="_blank"
+        >
+          HireHub on Azure
+        </a>
+      </p>
+
+      <!-- Optional screenshot or GIF -->
+      <video width="600" controls>
+        <source src="images/Demo_HireHub.mp4" type="video/mp4">
+      </video>
+      <br /><br />
+
+
+
+      <h3>Technologies Used</h3>
+      <ul>
+        <li><strong>Front-end:</strong> React</li>
+        <li><strong>Back-end:</strong> Node.js, Express</li>
+        <li><strong>Database:</strong> MongoDB</li>
+        <li><strong>Deployment:</strong> Azure Web Apps</li>
+      </ul>
+
+      <h3>Authors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>GitHub Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abdulmalik Alnasra</td>
+            <td><a href="https://github.com/Abdul-was-here" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Akshay Silswal</td>
+            <td><a href="https://github.com/AkkiSilswal" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>David Li</td>
+            <td><a href="https://github.com/ljld12315" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Juchang (JC) Kim</td>
+            <td><a href="https://github.com/JuchangKim" target="_blank">GitHub</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+    <!-- =========================
+         1. Java Projects
+    ========================== -->
+    <section id="java-projects">
+      <h2>Java Projects</h2>
+
+      <!-- (A) Poker Game -->
+      <article class="project-section">
+        <h3>Poker Game (GUI + Embedded Derby Database, Java)</h3>
+        <video width="600" controls>
+          <source src="images/Assignment2-Video-PokerGame.mp4" type="video/mp4">
+        </video>
+        <br />
+        <h4>Overview</h4>
+        <p>
+          A fully functioning <strong>GUI-based Poker Game</strong> built upon OOP principles,
+          featuring an <strong>Embedded Derby Database</strong> to store user data. 
+          It extends from an earlier CLI version, adding robust GUI stages and database 
+          integration.
+        </p>
+        <p><strong>Repository Link:</strong> 
+          <a href="https://github.com/JuchangKim/PokerApp" target="_blank">
+            Poker Game Repository
+          </a>
+        </p>
+        <br />
+
+        <h4>Features</h4>
+        <ul>
+          <li>🎮 <strong>User-friendly GUI</strong> with multiple game stages</li>
+          <li>🛢 <strong>Embedded Derby Database</strong> (<code>POKER</code> schema) for persistent data</li>
+          <li>💾 <strong>Save &amp; Load</strong> functionality for user progress</li>
+          <li>🚪 <strong>Graceful exit</strong> without losing data</li>
+          <li>🏛 <strong>Strong OOP principles &amp; MVC Design pattern</strong></li>
+          <li>📌 <strong>39 classes</strong> (excluding test classes)</li>
+        </ul>
+
+        <h4>Download ZIP + Report</h4>
         <div class="file-preview">
+          <!-- PDF Preview (Report) -->
           <embed 
-          src="images/Assignment2-Report-PokerGame.pdf" 
-          type="application/pdf" 
-          width="600" 
-          height="500"
+            src="images/Assignment2-Report-PokerGame.pdf" 
+            type="application/pdf" 
+            width="600" 
+            height="500"
           />
           <br /><br />
-          <!-- Force download button for the PDF -->
-          <button 
-          onclick="forceDownload('images/Assignment2-Report-PokerGame.pdf','Assignment2-Report-PokerGame.pdf')"
+          <p>
+            <a href="images/Assignment2-Report-PokerGame.pdf" download>Download PDF</a>
+          </p>
+        </div>
+        <p>
+          <a 
+            href="https://github.com/JuchangKim/PokerApp/raw/main/Assignment1/dist.zip"
+            target="_blank"
           >
-          Download PDF
-        </button>
-      </div>
+            Download Poker Game (dist.zip)
+          </a>
+        </p>
 
-        <strong>Download </strong><br />
-        <a 
-        href="https://github.com/JuchangKim/PokerApp/raw/main/Assignment1/dist.zip"
-        target="_blank"
-        >
-        Click here to download
-      </a>
-    </p>
-    
-    
-    <h4>Team Contributions</h4>
-    <p>
-      <strong>Juchang Kim</strong>
-      <ul>
-        <p>Developed <strong>Main GUI Panel</strong> and implemented <strong>MVC Design Pattern</strong></p>
-        <p>Created &amp; implemented all project packages</p>
-        <p>Managed branch merging, resolved compilation errors</p>
-        <p>Edited the demonstration video</p>
-      </ul>
-      <strong>Billie-Jean Laing</strong>
-      <ul>
-        <p>Database Access Management, Abstract &amp; Interface Classes</p>
-        <p>Sourced game images</p>
-        <p>Developed 5 integration tests (CardIT, ComputerPlayerIT, etc.)</p>
-        <p>Designed the DB structure (DBManager, DBInitialiser)</p>
-        <p>Improved FileManager &amp; authored project report</p>
-      </ul>
-    </p>
-    
-    <h4>Acknowledgments</h4>
-    <p>
-      This project was developed as part of Assignment 2 for COMP603. 
-      Special thanks to team members for their collaboration and hard work.<br/>
-      <strong>Repository Link:</strong> 
-      <a href="https://github.com/JuchangKim/PokerApp" target="_blank">
-        Poker Game Repository
-      </a>
-    </p>
-  </article>
-</section>
+        <h4>Team Contributions</h4>
+        <p>
+          <strong>Juchang Kim</strong><br />
+          - Developed <em>Main GUI Panel</em> and implemented <em>MVC</em><br />
+          - Created &amp; implemented project packages<br />
+          - Merged branches and fixed compilation errors<br />
+          - Edited demonstration video
+        </p>
+        <p>
+          <strong>Billie-Jean Laing</strong><br />
+          - Database Access Management, Abstract &amp; Interface Classes<br />
+          - Sourced game images<br />
+          - Wrote 5 integration tests (CardIT, ComputerPlayerIT, etc.)<br />
+          - Designed DB structure (DBManager, DBInitialiser)<br />
+          - Improved FileManager & authored project report
+        </p>
+        <h4>Acknowledgments</h4>
+        <p>
+          Developed as Assignment 2 for COMP603. Thanks to all team members for their hard work!
+        </p>
+      </article>
 
-<!-- 1. Phone Virus Simulation -->
-<section class="project-section">
-  <h2>Phone Virus Simulation</h2>
-  <!-- Direct download link for the JAR -->
-  <p>
-    <a href="projects/java/Assignment_1_S1_Release/dist/Assignment_1_S1_Release_2_.jar" download>Download Phone Virus Simulation</a>
-  </p>
-  
-  <!-- Preview video -->
-  <video width="600" controls>
-    <source src="images/MobilePhoneVirusSimulation.mp4" type="video/mp4">
-  </video>
-  
-  <h3>Using Knowledge</h3>
-  <p>
-    Thread, Synchronisation, Generics, GUI, Key input, Lists, etc.
-  </p>
-  
-  <h3>Explanation</h3>
-  <p>
-    There is a simulation of virus-infected phones. The blue dot is a healthy phone; 
-    the red dot is an infected phone. Infected phones must go to a repair shop at the 
-    middle top of the panel. The repair shop can only fix one phone at a time, so other 
-    infected phones must wait.
-  </p>
-  <p>
-    After a certain time, the repaired phone is released as a healthy phone, 
-    and the repair shop takes in another waiting infected phone. When you press 
-    the <strong>up arrow</strong> key, a new healthy phone is created. Press the 
-    <strong>v</strong> key to infect a healthy phone randomly. If a healthy phone 
-    is near an infected phone, it also becomes infected.
-  </p>
-</section>
+      <hr />
 
-<hr />
+      <!-- (B) Phone Virus Simulation -->
+      <article class="project-section">
+        <h3>Phone Virus Simulation (Java)</h3>
+        <p>
+          <a 
+            href="projects/java/Assignment_1_S1_Release/dist/Assignment_1_S1_Release_2_.jar" 
+            download
+          >
+            Download Phone Virus Simulation (JAR)
+          </a>
+        </p>
+        <video width="600" controls>
+          <source src="images/MobilePhoneVirusSimulation.mp4" type="video/mp4">
+        </video>
+        <h4>Using Knowledge</h4>
+        <p>Threads, Synchronization, Generics, GUI, Key input, etc.</p>
+        <h4>Explanation</h4>
+        <p>
+          Simulates phones being infected by a virus. Infected phones queue for a 
+          repair shop that fixes one phone at a time. New phones can be spawned, 
+          and infections can spread if a healthy phone is near an infected one.
+        </p>
+      </article>
 
-<!-- 2. Path Finder (Binary Maze) -->
-<section class="project-section">
-  <h2>Path Finder (Binary Maze)</h2>
-  <p>
-    <a 
-    href="projects/java/Assignment_2_S1_Release/dist/BinaryMaze.jar" download>
-    Download Binary Maze
-  </a>
-</p>
+      <hr />
 
-<!-- Forced download links for text files -->
-<ul>
-  <li>
-    <a 
-    href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
-    download
-    >
-    Maze Text File 1
-  </a>
-</li>
-<li>
-  <a 
-  href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt"
-  download
-  >
-  Maze Text File 2
-</a>
-</li>
-</ul>
+      <!-- (C) Path Finder (Binary Maze) -->
+      <article class="project-section">
+        <h3>Path Finder (Binary Maze, Java)</h3>
+        <p>
+          <a 
+            href="projects/java/Assignment_2_S1_Release/dist/BinaryMaze.jar" 
+            download
+          >
+            Download Binary Maze
+          </a>
+        </p>
+        <ul>
+          <li>
+            <a 
+              href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
+              download
+            >
+              Maze Text File 1
+            </a>
+          </li>
+          <li>
+            <a 
+              href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt" 
+              download
+            >
+              Maze Text File 2
+            </a>
+          </li>
+        </ul>
+        <video width="600" controls>
+          <source src="images/Screen_Recording_2024-08-01_135208.mp4" type="video/mp4">
+        </video>
+        <h4>Using Knowledge</h4>
+        <p>Binary Tree, GUI, Text File Input, Traversal (Stack + Recursion), etc.</p>
+        <h4>Explanation</h4>
+        <p>
+          Reads a maze from a text file, builds a binary-tree-based path system, 
+          and searches for the exit. Once found, the path is displayed.
+        </p>
+      </article>
+    </section>
 
-<!-- Preview video -->
-<video width="600" controls>
-  <source 
-  src="images/Screen_Recording_2024-08-01_135208.mp4" 
-  type="video/mp4" 
-  />
-</video>
-
-<h3>Using Knowledge</h3>
-<p>
-  Binary Tree, GUI, Text File Input, Lists, 
-  Traversal with Stack, Recursion, etc.
-</p>
-
-<h3>Explanation</h3>
-<p>
-  The program first requests a maze text file. It reads the text and uses the data 
-  to build a binary-tree-based maze. The maze is displayed on screen, and a traversal 
-  algorithm (using recursion and stack) tries to find the exit. Once the exit is 
-  found, the path is shown in the bottom-right area.
-</p>
-</section>
-
-<hr />
+    <hr />
 
 
+    <!-- =========================
+         3. Data Science Projects
+    ========================== -->
+    <section id="data-science-projects">
+      <h2>Data Science &amp; Analysis (Python)</h2>
 
-<!-- =======================
-2. Data Science Projects
-======================= -->
-<section id="data-science-projects">
-  <h2>Data Science & Analysis (Python)</h2>
-  
-  <!-- A) Foundation of Data Science -->
-  <article class="project-section">
-    <h3>Foundation of Data Science</h3>
-    
-    <h4>Data Science Analysis (PDF)</h4>
-    <div class="file-preview">
-      <embed 
-      src="projects/python/data-science/COMP615_Assignment_2.pdf" 
-      type="application/pdf" 
-      width="600" 
-      height="500"
-      />
-      <br /><br />
-      <!-- Force download button for the PDF -->
-      <button 
-      onclick="forceDownload('projects/python/data-science/COMP615_Assignment_2.pdf','COMP615_Assignment_2.pdf')"
-      >
-      Download PDF
-    </button>
-  </div>
-  
-  <h4>Python Code (.ipynb)</h4>
-  <p>
-    
-    <!-- Force download for .ipynb file -->
-    <a 
-    href="#" 
-    onclick="forceDownload('projects/python/data-science/COMP615_Assessment2.ipynb','COMP615_Assessment2.ipynb')"
-    >
-    Download .ipynb
-  </a>
-</p>
+      <!-- (A) Foundation of Data Science -->
+      <article class="project-section">
+        <h3>Foundation of Data Science</h3>
+        <h4>Data Science Analysis (PDF)</h4>
+        <div class="file-preview">
+          <embed 
+            src="projects/python/data-science/COMP615_Assignment_2.pdf" 
+            type="application/pdf" 
+            width="600" 
+            height="500"
+          />
+          <br /><br />
+          <a
+            href="#"
+            onclick="forceDownload('projects/python/data-science/COMP615_Assignment_2.pdf','COMP615_Assignment_2.pdf')"
+          >
+            Download PDF
+          </a>
+        </div>
 
-<h4>Dataset (CSV)</h4>
-<p>
-  <a 
-  href="#" 
-  onclick="forceDownload('projects/python/data-science/bank.csv','bank.csv')"
-  >
-  Download bank.csv
-</a>
-</p>
+        <h4>Python Code (.ipynb)</h4>
+        <p>
+          <a 
+            href="#"
+            onclick="forceDownload('projects/python/data-science/COMP615_Assessment2.ipynb','COMP615_Assessment2.ipynb')"
+          >
+            Download .ipynb
+          </a>
+        </p>
 
-<h4>Related Knowledge</h4>
-<p>
-  Data Visualization, Pre-processing, Exploratory Data Analysis (EDA), 
-  Feature Selection (p-value), Correlation Heatmap, Naive Bayes, KNN, ANN,
-  Classification Model Evaluation (Accuracy, Confusion Matrix, K-Fold Cross Validation).
-</p>
+        <h4>Dataset (CSV)</h4>
+        <p>
+          <a 
+            href="#"
+            onclick="forceDownload('projects/python/data-science/bank.csv','bank.csv')"
+          >
+            Download bank.csv
+          </a>
+        </p>
 
-<h4>Reflection</h4>
-<p>
-  Gained experience in data cleaning, feature engineering, and multiple 
-  classification models. Learned how to evaluate model performance and 
-  interpret results for real-world usage.
-</p>
-</article>
+        <h4>Related Knowledge</h4>
+        <p>
+          Data Visualization, Pre-processing, Exploratory Data Analysis (EDA), 
+          Feature Selection (p-value), Correlation Heatmap, Naive Bayes, KNN, ANN,
+          Classification Model Evaluation (Accuracy, Confusion Matrix, K-Fold).
+        </p>
 
-<hr />
+        <h4>Reflection</h4>
+        <p>
+          Learned data cleaning, feature engineering, classification models, 
+          and how to evaluate performance in real-world contexts.
+        </p>
+      </article>
 
-<!-- B) Data Analysis Project -->
-<article class="project-section">
-  <h3>Data Analysis</h3>
-  
-  <h4>Data Analysis (PDF)</h4>
-  <div class="file-preview">
-    <embed
-    src="projects/python/data-science/annotated-Assignment2.pdf"
-    type="application/pdf"
-    width="600"
-    height="500"
-    />
-    <br /><br />
-    <button
-    onclick="forceDownload('projects/python/data-science/annotated-Assignment2.pdf','annotated-Assignment2.pdf')"
-    >
-    Download PDF
-  </button>
-</div>
+      <hr />
 
-<h4>Python Code (.ipynb)</h4>
-<p>
-  <a
-  href="#"
-  onclick="forceDownload('projects/python/data-science/Explanation_and_Code_Assignment_2%20Group_6_Final_Code-1.ipynb','Explanation_and_Code_Assignment_2_Group_6_Final_Code-1.ipynb')"
-  >
-  Download .ipynb
-</a>
-</p>
+      <!-- (B) Data Analysis Project -->
+      <article class="project-section">
+        <h3>Data Analysis (Python)</h3>
+        <h4>Data Analysis (PDF)</h4>
+        <div class="file-preview">
+          <embed
+            src="projects/python/data-science/annotated-Assignment2.pdf"
+            type="application/pdf"
+            width="600"
+            height="500"
+          />
+          <br /><br />
+          <a
+            href="#"
+            onclick="forceDownload('projects/python/data-science/annotated-Assignment2.pdf','annotated-Assignment2.pdf')"
+          >
+            Download PDF
+          </a>
+        </div>
 
-<h4>Dataset (CSV)</h4>
-<p>
-  <a 
-  href="#" 
-  onclick="forceDownload('projects/python/data-science/Employee_Performance.csv','Employee_Performance.csv')"
-  >
-  Download Employee_Performance.csv
-</a>
-</p>
+        <h4>Python Code (.ipynb)</h4>
+        <p>
+          <a
+            href="#"
+            onclick="forceDownload('projects/python/data-science/Explanation_and_Code_Assignment_2%20Group_6_Final_Code-1.ipynb','Explanation_and_Code_Assignment_2_Group_6_Final_Code-1.ipynb')"
+          >
+            Download .ipynb
+          </a>
+        </p>
 
-<h4>Related Knowledge</h4>
-<p>
-  Data Visualization, Pre-processing, EDA, Feature Selection (ANOVA, p-value), 
-  Correlation Heatmap, Hypothesis Testing, Linear Regression, OLS Regression, 
-  Q-Q Plot for normality, Homoscedasticity, Multicollinearity checks.
-</p>
+        <h4>Dataset (CSV)</h4>
+        <p>
+          <a 
+            href="#"
+            onclick="forceDownload('projects/python/data-science/Employee_Performance.csv','Employee_Performance.csv')"
+          >
+            Download Employee_Performance.csv
+          </a>
+        </p>
 
-<h4>Reflection</h4>
-<p>
-  Learned how to validate assumptions in regression models and interpret 
-  results to draw actionable insights. This was a 3-person team project, 
-  emphasizing collaboration and advanced data analysis techniques.
-</p>
-</article>
-</section>
+        <h4>Related Knowledge</h4>
+        <p>
+          Data Visualization, Pre-processing, EDA, Feature Selection (ANOVA, p-value), 
+          Correlation Heatmap, Hypothesis Testing, Linear Regression, 
+          Q-Q Plot, Homoscedasticity, Multicollinearity, etc.
+        </p>
 
-</div><!-- End of .container -->
+        <h4>Reflection</h4>
+        <p>
+          Explored assumption checks in regression models and interpretation 
+          of results. A team project emphasizing advanced data analysis techniques.
+        </p>
+      </article>
+    </section>
+  </div><!-- End .container -->
 
-
-<footer>
-  &copy; 2025 Juchang Kim. All rights reserved.
-</footer>
+  <footer>
+    <p>&copy; 2025 Juchang Kim. All rights reserved.</p>
+  </footer>
 </body>
 </html>
