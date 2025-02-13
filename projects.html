@@ -5,7 +5,7 @@
   <title>Projects (Java) - Portfolio</title>
   <!-- Link to your main portfolio stylesheet instead of minimal-table.css -->
   <link rel="stylesheet" href="styles.css" />
-
+  
   <!-- Script for forced downloads (if you still need it) -->
   <script>
     function forceDownload(url, filename) {
@@ -28,232 +28,325 @@
     <a href="projects.html" class="nav-box">Projects</a>
     <a href="contact.html" class="nav-box">Contact Me</a>
   </nav>
-
+  
   <!-- Main content container -->
   <div class="container">
     <h1>Projects (Java)</h1>
     <hr />
-
-    <!-- 1. Phone Virus Simulation -->
-    <section class="project-section">
-      <h2>Phone Virus Simulation</h2>
-      <!-- Direct download link for the JAR -->
-      <p>
-        <a href="projects/java/Assignment_1_S1_Release/dist/Assignment_1_S1_Release_2_.jar" download>Download Phone Virus Simulation</a>
-      </p>
-
+    <!-- (C) Poker Game (GUI + Derby DB) -->
+    <article class="project-section">
+      <h3>Poker Game (GUI + Embedded Derby Database)</h3>
+      
       <!-- Preview video -->
       <video width="600" controls>
-        <source src="images/MobilePhoneVirusSimulation.mp4" type="video/mp4">
+        <source src="images/Assignment2-Video-PokerGame.mp4" type="video/mp4">
       </video>
-
-      <h3>Using Knowledge</h3>
+      
+      <h4>Overview</h4>
       <p>
-        Thread, Synchronisation, Generics, GUI, Key input, Lists, etc.
+        A fully functioning <strong>GUI-based Poker Game</strong> built upon OOP principles,
+        featuring an <strong>Embedded Derby Database</strong> to store user data. 
+        It extends from an earlier CLI version, adding robust GUI stages and database 
+        integration.
       </p>
-
-      <h3>Explanation</h3>
-      <p>
-        There is a simulation of virus-infected phones. The blue dot is a healthy phone; 
-        the red dot is an infected phone. Infected phones must go to a repair shop at the 
-        middle top of the panel. The repair shop can only fix one phone at a time, so other 
-        infected phones must wait.
-      </p>
-      <p>
-        After a certain time, the repaired phone is released as a healthy phone, 
-        and the repair shop takes in another waiting infected phone. When you press 
-        the <strong>up arrow</strong> key, a new healthy phone is created. Press the 
-        <strong>v</strong> key to infect a healthy phone randomly. If a healthy phone 
-        is near an infected phone, it also becomes infected.
-      </p>
-    </section>
-
-    <hr />
-
-    <!-- 2. Path Finder (Binary Maze) -->
-    <section class="project-section">
-      <h2>Path Finder (Binary Maze)</h2>
-      <p>
-        <a 
-          href="projects/java/Assignment_2_S1_Release/dist/BinaryMaze.jar" download>
-          Download Binary Maze
-        </a>
-      </p>
-
-      <!-- Forced download links for text files -->
+      
       <ul>
-        <li>
-          <a 
-            href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
-            download
-          >
-            Maze Text File 1
-          </a>
-        </li>
-        <li>
-          <a 
-            href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt"
-            download
-          >
-            Maze Text File 2
-          </a>
-        </li>
+        <li>🎮 **User-friendly GUI** with multiple game stages</li>
+        <li>🛢 **Embedded Derby Database** (<code>POKER</code> schema) for persistent data</li>
+        <li>💾 **Save &amp; Load** functionality for user progress</li>
+        <li>🚪 **Graceful exit** without losing data</li>
+        <li>🏛 **Strong OOP principles** for better maintainability</li>
+        <li>📌 <strong>39 classes</strong> (excluding test classes)</li>
       </ul>
-
-      <!-- Preview video -->
-      <video width="600" controls>
-        <source 
-          src="images/Screen_Recording_2024-08-01_135208.mp4" 
-          type="video/mp4" 
-        />
-      </video>
-
-      <h3>Using Knowledge</h3>
+      
+      <h4>Database Details</h4>
       <p>
-        Binary Tree, GUI, Text File Input, Lists, 
-        Traversal with Stack, Recursion, etc.
+        <strong>Schema:</strong> <code>POKER</code><br/>
+        <strong>Username:</strong> <code>poker</code><br/>
+        <strong>Password:</strong> <code>poker</code><br/>
+        <strong>Location:</strong> <code>PokerGameEmbd</code> (within the dist folder)
       </p>
-
-      <h3>Explanation</h3>
+      
+      <h4>How to Download & Run</h4>
       <p>
-        The program first requests a maze text file. It reads the text and uses the data 
-        to build a binary-tree-based maze. The maze is displayed on screen, and a traversal 
-        algorithm (using recursion and stack) tries to find the exit. Once the exit is 
-        found, the path is shown in the bottom-right area.
-      </p>
-    </section>
 
-    <hr />
-
-  
-
-   <!-- =======================
-         2. Data Science Projects
-    ======================= -->
-    <section id="data-science-projects">
-      <h2>Data Science & Analysis (Python)</h2>
-
-      <!-- A) Foundation of Data Science -->
-      <article class="project-section">
-        <h3>Foundation of Data Science</h3>
-        
-        <h4>Data Science Analysis (PDF)</h4>
         <div class="file-preview">
           <embed 
-            src="projects/python/data-science/COMP615_Assignment_2.pdf" 
-            type="application/pdf" 
-            width="600" 
-            height="500"
+          src="images/Assignment2-Report-PokerGame.pdf" 
+          type="application/pdf" 
+          width="600" 
+          height="500"
           />
           <br /><br />
           <!-- Force download button for the PDF -->
           <button 
-            onclick="forceDownload('projects/python/data-science/COMP615_Assignment_2.pdf','COMP615_Assignment_2.pdf')"
+          onclick="forceDownload('images/Assignment2-Report-PokerGame.pdf','Assignment2-Report-PokerGame.pdf')"
           >
-            Download PDF
-          </button>
-        </div>
+          Download PDF
+        </button>
+      </div>
 
-        <h4>Python Code (.ipynb)</h4>
-        <p>
-          
-          <!-- Force download for .ipynb file -->
-          <a 
-            href="#" 
-            onclick="forceDownload('projects/python/data-science/COMP615_Assessment2.ipynb','COMP615_Assessment2.ipynb')"
-          >
-            Download .ipynb
-          </a>
-        </p>
+        <strong>1) Download <code>dist.zip</code>:</strong><br />
+        <a 
+        href="https://github.com/JuchangKim/PokerApp/raw/main/Assignment1/dist.zip"
+        target="_blank"
+        >
+        Click here to download <code>dist.zip</code>
+      </a>
+    </p>
+    
+    
+    <h4>Team Contributions</h4>
+    <p>
+      <strong>Juchang Kim</strong>
+      <ul>
+        <li>Developed <em>Main GUI Panel</em> and implemented <em>MVC Design Pattern</em></li>
+        <li>Created &amp; implemented all project packages</li>
+        <li>Managed branch merging, resolved compilation errors</li>
+        <li>Edited the demonstration video</li>
+      </ul>
+      <strong>Billie-Jean Laing</strong>
+      <ul>
+        <li>Database Access Management, Abstract &amp; Interface Classes</li>
+        <li>Sourced game images</li>
+        <li>Developed 5 integration tests (<code>CardIT</code>, <code>ComputerPlayerIT</code>, etc.)</li>
+        <li>Designed the DB structure (<code>DBManager</code>, <code>DBInitialiser</code>)</li>
+        <li>Improved <code>FileManager</code> &amp; authored project report</li>
+      </ul>
+    </p>
+    
+    <h4>Acknowledgments</h4>
+    <p>
+      This project was developed as part of Assignment 2 for COMP603. 
+      Special thanks to team members for their collaboration and hard work.<br/>
+      <strong>Repository Link:</strong> 
+      <a href="https://github.com/JuchangKim/PokerApp" target="_blank">
+        Poker Game Repository
+      </a>
+    </p>
+  </article>
+</section>
+</div>
+<!-- 1. Phone Virus Simulation -->
+<section class="project-section">
+  <h2>Phone Virus Simulation</h2>
+  <!-- Direct download link for the JAR -->
+  <p>
+    <a href="projects/java/Assignment_1_S1_Release/dist/Assignment_1_S1_Release_2_.jar" download>Download Phone Virus Simulation</a>
+  </p>
+  
+  <!-- Preview video -->
+  <video width="600" controls>
+    <source src="images/MobilePhoneVirusSimulation.mp4" type="video/mp4">
+  </video>
+  
+  <h3>Using Knowledge</h3>
+  <p>
+    Thread, Synchronisation, Generics, GUI, Key input, Lists, etc.
+  </p>
+  
+  <h3>Explanation</h3>
+  <p>
+    There is a simulation of virus-infected phones. The blue dot is a healthy phone; 
+    the red dot is an infected phone. Infected phones must go to a repair shop at the 
+    middle top of the panel. The repair shop can only fix one phone at a time, so other 
+    infected phones must wait.
+  </p>
+  <p>
+    After a certain time, the repaired phone is released as a healthy phone, 
+    and the repair shop takes in another waiting infected phone. When you press 
+    the <strong>up arrow</strong> key, a new healthy phone is created. Press the 
+    <strong>v</strong> key to infect a healthy phone randomly. If a healthy phone 
+    is near an infected phone, it also becomes infected.
+  </p>
+</section>
 
-        <h4>Dataset (CSV)</h4>
-        <p>
-          <a 
-            href="#" 
-            onclick="forceDownload('projects/python/data-science/bank.csv','bank.csv')"
-          >
-            Download bank.csv
-          </a>
-        </p>
+<hr />
 
-        <h4>Related Knowledge</h4>
-        <p>
-          Data Visualization, Pre-processing, Exploratory Data Analysis (EDA), 
-          Feature Selection (p-value), Correlation Heatmap, Naive Bayes, KNN, ANN,
-          Classification Model Evaluation (Accuracy, Confusion Matrix, K-Fold Cross Validation).
-        </p>
+<!-- 2. Path Finder (Binary Maze) -->
+<section class="project-section">
+  <h2>Path Finder (Binary Maze)</h2>
+  <p>
+    <a 
+    href="projects/java/Assignment_2_S1_Release/dist/BinaryMaze.jar" download>
+    Download Binary Maze
+  </a>
+</p>
 
-        <h4>Reflection</h4>
-        <p>
-          Gained experience in data cleaning, feature engineering, and multiple 
-          classification models. Learned how to evaluate model performance and 
-          interpret results for real-world usage.
-        </p>
-      </article>
+<!-- Forced download links for text files -->
+<ul>
+  <li>
+    <a 
+    href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
+    download
+    >
+    Maze Text File 1
+  </a>
+</li>
+<li>
+  <a 
+  href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt"
+  download
+  >
+  Maze Text File 2
+</a>
+</li>
+</ul>
 
-      <hr />
+<!-- Preview video -->
+<video width="600" controls>
+  <source 
+  src="images/Screen_Recording_2024-08-01_135208.mp4" 
+  type="video/mp4" 
+  />
+</video>
 
-      <!-- B) Data Analysis Project -->
-      <article class="project-section">
-        <h3>Data Analysis</h3>
+<h3>Using Knowledge</h3>
+<p>
+  Binary Tree, GUI, Text File Input, Lists, 
+  Traversal with Stack, Recursion, etc.
+</p>
 
-        <h4>Data Analysis (PDF)</h4>
-        <div class="file-preview">
-          <embed
-            src="projects/python/data-science/annotated-Assignment2.pdf"
-            type="application/pdf"
-            width="600"
-            height="500"
-          />
-          <br /><br />
-          <button
-            onclick="forceDownload('projects/python/data-science/annotated-Assignment2.pdf','annotated-Assignment2.pdf')"
-          >
-            Download PDF
-          </button>
-        </div>
+<h3>Explanation</h3>
+<p>
+  The program first requests a maze text file. It reads the text and uses the data 
+  to build a binary-tree-based maze. The maze is displayed on screen, and a traversal 
+  algorithm (using recursion and stack) tries to find the exit. Once the exit is 
+  found, the path is shown in the bottom-right area.
+</p>
+</section>
 
-        <h4>Python Code (.ipynb)</h4>
-        <p>
-          <a
-            href="#"
-            onclick="forceDownload('projects/python/data-science/Explanation_and_Code_Assignment_2%20Group_6_Final_Code-1.ipynb','Explanation_and_Code_Assignment_2_Group_6_Final_Code-1.ipynb')"
-          >
-            Download .ipynb
-          </a>
-        </p>
-
-        <h4>Dataset (CSV)</h4>
-        <p>
-          <a 
-            href="#" 
-            onclick="forceDownload('projects/python/data-science/Employee_Performance.csv','Employee_Performance.csv')"
-          >
-            Download Employee_Performance.csv
-          </a>
-        </p>
-
-        <h4>Related Knowledge</h4>
-        <p>
-          Data Visualization, Pre-processing, EDA, Feature Selection (ANOVA, p-value), 
-          Correlation Heatmap, Hypothesis Testing, Linear Regression, OLS Regression, 
-          Q-Q Plot for normality, Homoscedasticity, Multicollinearity checks.
-        </p>
-
-        <h4>Reflection</h4>
-        <p>
-          Learned how to validate assumptions in regression models and interpret 
-          results to draw actionable insights. This was a 3-person team project, 
-          emphasizing collaboration and advanced data analysis techniques.
-        </p>
-      </article>
-    </section>
-
-  </div><!-- End of .container -->
+<hr />
 
 
-  <footer>
-    &copy; 2025 Juchang Kim. All rights reserved.
-  </footer>
+
+<!-- =======================
+2. Data Science Projects
+======================= -->
+<section id="data-science-projects">
+  <h2>Data Science & Analysis (Python)</h2>
+  
+  <!-- A) Foundation of Data Science -->
+  <article class="project-section">
+    <h3>Foundation of Data Science</h3>
+    
+    <h4>Data Science Analysis (PDF)</h4>
+    <div class="file-preview">
+      <embed 
+      src="projects/python/data-science/COMP615_Assignment_2.pdf" 
+      type="application/pdf" 
+      width="600" 
+      height="500"
+      />
+      <br /><br />
+      <!-- Force download button for the PDF -->
+      <button 
+      onclick="forceDownload('projects/python/data-science/COMP615_Assignment_2.pdf','COMP615_Assignment_2.pdf')"
+      >
+      Download PDF
+    </button>
+  </div>
+  
+  <h4>Python Code (.ipynb)</h4>
+  <p>
+    
+    <!-- Force download for .ipynb file -->
+    <a 
+    href="#" 
+    onclick="forceDownload('projects/python/data-science/COMP615_Assessment2.ipynb','COMP615_Assessment2.ipynb')"
+    >
+    Download .ipynb
+  </a>
+</p>
+
+<h4>Dataset (CSV)</h4>
+<p>
+  <a 
+  href="#" 
+  onclick="forceDownload('projects/python/data-science/bank.csv','bank.csv')"
+  >
+  Download bank.csv
+</a>
+</p>
+
+<h4>Related Knowledge</h4>
+<p>
+  Data Visualization, Pre-processing, Exploratory Data Analysis (EDA), 
+  Feature Selection (p-value), Correlation Heatmap, Naive Bayes, KNN, ANN,
+  Classification Model Evaluation (Accuracy, Confusion Matrix, K-Fold Cross Validation).
+</p>
+
+<h4>Reflection</h4>
+<p>
+  Gained experience in data cleaning, feature engineering, and multiple 
+  classification models. Learned how to evaluate model performance and 
+  interpret results for real-world usage.
+</p>
+</article>
+
+<hr />
+
+<!-- B) Data Analysis Project -->
+<article class="project-section">
+  <h3>Data Analysis</h3>
+  
+  <h4>Data Analysis (PDF)</h4>
+  <div class="file-preview">
+    <embed
+    src="projects/python/data-science/annotated-Assignment2.pdf"
+    type="application/pdf"
+    width="600"
+    height="500"
+    />
+    <br /><br />
+    <button
+    onclick="forceDownload('projects/python/data-science/annotated-Assignment2.pdf','annotated-Assignment2.pdf')"
+    >
+    Download PDF
+  </button>
+</div>
+
+<h4>Python Code (.ipynb)</h4>
+<p>
+  <a
+  href="#"
+  onclick="forceDownload('projects/python/data-science/Explanation_and_Code_Assignment_2%20Group_6_Final_Code-1.ipynb','Explanation_and_Code_Assignment_2_Group_6_Final_Code-1.ipynb')"
+  >
+  Download .ipynb
+</a>
+</p>
+
+<h4>Dataset (CSV)</h4>
+<p>
+  <a 
+  href="#" 
+  onclick="forceDownload('projects/python/data-science/Employee_Performance.csv','Employee_Performance.csv')"
+  >
+  Download Employee_Performance.csv
+</a>
+</p>
+
+<h4>Related Knowledge</h4>
+<p>
+  Data Visualization, Pre-processing, EDA, Feature Selection (ANOVA, p-value), 
+  Correlation Heatmap, Hypothesis Testing, Linear Regression, OLS Regression, 
+  Q-Q Plot for normality, Homoscedasticity, Multicollinearity checks.
+</p>
+
+<h4>Reflection</h4>
+<p>
+  Learned how to validate assumptions in regression models and interpret 
+  results to draw actionable insights. This was a 3-person team project, 
+  emphasizing collaboration and advanced data analysis techniques.
+</p>
+</article>
+</section>
+
+</div><!-- End of .container -->
+
+
+<footer>
+  &copy; 2025 Juchang Kim. All rights reserved.
+</footer>
 </body>
 </html>
