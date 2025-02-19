@@ -57,8 +57,9 @@ body {
   top: 100px;
   left: 20px;
   width: 250px;
-  height: calc(100% - 200px);
-  overflow-y: auto;
+  height: auto;       /* Sidebar now only as tall as its content */
+  overflow-y: visible;/* or remove this if you don’t want internal scrolling */
+
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 5px;
   border: 1px solid #ccc;
