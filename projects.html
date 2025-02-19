@@ -28,6 +28,7 @@
     <a href="projects.html" class="nav-box active">Projects</a>
     <a href="contact.html" class="nav-box">Contact Me</a>
   </nav>
+
   <div class="layout-container">
 
     <!-- Sidebar -->
@@ -51,6 +52,9 @@
 
         <!-- 6) Research (Python, Data Analysis) -->
         <li><a href="#data-analysis">Data Analysis (Python)</a></li>
+
+        <!-- 7) Research (Python, Currency Exchange) -->
+        <li><a href="#currency-exchange">Currency Exchange (Python)</a></li>
       </ul>
     </aside>
 
@@ -232,6 +236,73 @@
 
       <hr />
 
+      <!-- =========================
+           4. Algorithm Research: Currency Exchange Problem
+      ========================== -->
+      <article id="currency-exchange" class="project-section">
+        <h2>Algorithm Research: Currency Exchange (Python)</h2>
+
+        <video width="600" controls>
+          <source src="images/COMP611_Assignment1.mp4" type="video/mp4">
+        </video>
+        <br />
+
+        <h4>Overview</h4>
+        <p>
+          This research explores currency exchange rates and finding the most efficient 
+          conversion paths using classic graph algorithms such as <strong>Bellman-Ford</strong> 
+          and <strong>Floyd-Warshall</strong>. The problem is modeled as a directed graph, 
+          where each edge represents a potential currency exchange rate from one currency 
+          to another.
+        </p>
+
+        <br>
+        <h4>Research Paper (PDF)</h4>
+        <div class="file-preview">
+          <!-- Adjust the path/filename to your actual PDF file -->
+          <embed
+            src="projects/python/algorithm-design-anaylsis/COMP611_Assignment_1.pdf"
+            type="application/pdf"
+            width="600"
+            height="500"
+          />
+          <br /><br />
+          <a 
+            href="#" 
+            onclick="forceDownload('projects/python/algorithm-design-anaylsis/COMP611_Assignment_1.pdf','ExchangeAlgorithms.pdf')"
+          >
+            Download PDF
+          </a>
+        </div>
+
+        <h4>Python Code</h4>
+        <p>
+          <!-- Adjust the path/filename to your actual code file(s) -->
+          <a
+            href="#"
+            onclick="forceDownload('projects/python/algorithm-design-anaylsis/COMP611_Assignment_1_Python_Code.zip','currency_exchange.zip')"
+          >
+            Download currency_exchange.zip
+          </a>
+        </p>
+
+        <h4>Key Algorithms & Concepts</h4>
+        <ul>
+          <li><strong>Directed Graph Representation</strong>: Each currency is a node, each exchange rate is a directed edge.</li>
+          <li><strong>Bellman-Ford Algorithm</strong>: Used to handle negative edge weights (e.g., arbitrage opportunities) and detect negative cycles.</li>
+          <li><strong>Floyd-Warshall Algorithm</strong>: Computes all-pairs shortest paths, evaluating every possible path among currencies.</li>
+        </ul>
+
+        <h4>Reflection</h4>
+        <p>
+          Through this research, I gained experience in implementing and comparing 
+          <em>Bellman-Ford</em> and <em>Floyd-Warshall</em> on a real-world currency 
+          exchange scenario. The project solidified my understanding of directed 
+          graph algorithms, handling negative edge weights, and how these algorithms 
+          can be applied to financial problems such as arbitrage detection.
+        </p>
+      </article>
+      <hr />
       <!-- (B) Phone Virus Simulation -->
       <article id="phone-virus" class="project-section">
         <br>
@@ -271,7 +342,7 @@
             Download Binary Maze
           </a>
         </p>
-        <ul>
+        <p>
           <li>
             <a 
               href="projects/java/Assignment_2_S1_Release/Maze1_(1).txt" 
@@ -279,15 +350,15 @@
             >
               Maze Text File 1
             </a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a 
               href="projects/java/Assignment_2_S1_Release/Maze2_(1).txt" 
               download
             >
               Maze Text File 2
             </a>
-          </li>
+          </p>
         </ul>
         <video width="600" controls>
           <source src="images/Screen_Recording_2024-08-01_135208.mp4" type="video/mp4">
