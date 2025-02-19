@@ -71,7 +71,42 @@
     border-radius: 8px;
     margin-bottom: 20px;
   }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 1em;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  .sidebar ul li {
+    margin: 0.5em 0;
+  }
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Main content styling */
+.main-content {
+  flex: 1; /* fill the remaining space */
+  padding: 1em 2em;
+}
 
+.main-content h1, .main-content h2 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 /* 2. Add margin to paragraphs and list items */
 .container p,
 .container li {

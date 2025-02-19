@@ -18,6 +18,7 @@
     }
   </script>
 </head>
+
 <body>
   <!-- Navigation bar (adjust paths as needed) -->
   <nav class="navbar">
@@ -27,8 +28,33 @@
     <a href="projects.html" class="nav-box active">Projects</a>
     <a href="contact.html" class="nav-box">Contact Me</a>
   </nav>
+  <div class="layout-container">
 
-  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Projects & Research</h2>
+      <ul>
+        <!-- 1) Project (HireHub, Web Development) -->
+        <li><a href="#hirehub">HireHub (Web Dev)</a></li>
+
+        <!-- 2) Project (Java, Poker game, data structure and construction) -->
+        <li><a href="#poker-game">Poker Game (Java)</a></li>
+
+        <!-- 3) Project (Java, Data Structure, Path Finder) -->
+        <li><a href="#path-finder">Path Finder (Java)</a></li>
+
+        <!-- 4) Project (Java, Data structure, Phone simulation) -->
+        <li><a href="#phone-virus">Phone Simulation (Java)</a></li>
+
+        <!-- 5) Research (Python, Data Science) -->
+        <li><a href="#foundation-of-data-science">Data Science (Python)</a></li>
+
+        <!-- 6) Research (Python, Data Analysis) -->
+        <li><a href="#data-analysis">Data Analysis (Python)</a></li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
     <h1>Projects</h1>
     <p>Here is a collection of my academic and personal projects, ranging from Java to web development and data science.</p>
     <hr />
@@ -54,6 +80,13 @@
         - News reading & commenting<br />
         - Company reviews & job preference filters
       </ul>
+
+      <h3>Repository Link:</h3> 
+        <a href="https://github.com/JuchangKim/HireHubWeb" target="_blank">
+          HireHub Repository
+        </a>
+      </p>
+      <br>
 
       <h3>Live Demo</h3>
       <p>
@@ -118,7 +151,8 @@
       <h2>Java Projects</h2>
 
       <!-- (A) Poker Game -->
-      <article class="project-section">
+      <article id="poker-game" class="project-section">
+        <br>
         <h3>Poker Game (GUI + Embedded Derby Database, Java)</h3>
         <video width="600" controls>
           <source src="images/Assignment2-Video-PokerGame.mp4" type="video/mp4">
@@ -147,6 +181,7 @@
           - 🏛 <strong>Strong OOP principles &amp; MVC Design pattern</strong><br />
           - 📌 <strong>39 classes</strong> (excluding test classes)
         </ul>
+        <br>
 
         <h4>Download ZIP + Report</h4>
         <div class="file-preview">
@@ -169,8 +204,10 @@
           >
             Download Poker Game (dist.zip)
           </a>
+          <br />
+          <p>- Unzip downloaded file and run the Assignment1.jar file.</p>
         </p>
-
+        <br>
         <h4>Team Contributions</h4>
         <p>
           <strong>Juchang Kim</strong><br />
@@ -196,7 +233,8 @@
       <hr />
 
       <!-- (B) Phone Virus Simulation -->
-      <article class="project-section">
+      <article id="phone-virus" class="project-section">
+        <br>
         <h3>Phone Virus Simulation (Java)</h3>
         <p>
           <a 
@@ -222,7 +260,8 @@
       <hr />
 
       <!-- (C) Path Finder (Binary Maze) -->
-      <article class="project-section">
+      <article id="path-finder" class="project-section">
+        <br>
         <h3>Path Finder (Binary Maze, Java)</h3>
         <p>
           <a 
@@ -329,7 +368,8 @@
       <hr />
 
       <!-- (B) Data Analysis Project -->
-      <article class="project-section">
+      <article id="data-analysis" class="project-section">
+        <br>
         <h3>Data Analysis (Python)</h3>
         <h4>Data Analysis (PDF)</h4>
         <div class="file-preview">
@@ -383,7 +423,7 @@
       </article>
     </section>
   </div><!-- End .container -->
-
+</div><!-- End .layout-container -->
   <footer>
     <p>&copy; 2025 Juchang Kim. All rights reserved.</p>
   </footer>
