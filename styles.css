@@ -99,7 +99,14 @@
   }
   /* Main content styling */
 .main-content {
-  flex: 1; /* fill the remaining space */
+  flex: 1; 
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;          /* Center text horizontally */
   padding: 1em 2em;
 }
 
