@@ -15,91 +15,90 @@
 <body>
   <!-- Example navigation bar - adjust links to your actual pages -->
   <nav class="navbar">
-    <a href="index.html" class="nav-box">Home</a>
-    <a href="about.html" class="nav-box">About Me</a>
-    <a href="skills.html" class="nav-box active">Skills</a>
-    <a href="projects.html" class="nav-box">Projects</a>
-    <a href="contact.html" class="nav-box">Contact</a>
-  </nav>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="skills.html" class="nav-item active">Skills</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+    </nav>
 
   <!-- Container for main content -->
-  <div class="container">
-    <h1>Skills &amp; Certifications</h1>
+  <main class="main-container">
+  <section class="section-card">
+    <h1>Technical Skills & Certifications</h1>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Core Languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript/TypeScript</span>
+          <span class="tag">C#</span><span class="tag">C</span><span class="tag">Kotlin</span><span class="tag">PHP</span>
+        </div>
+      </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>
-        Here are some of the technical and soft skills I have acquired through
-        my academic and professional experiences:
-      </p>
+      <div class="skill-category">
+        <h3>Framework, Libraries and API</h3>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span>
+          <span class="tag">.NET</span><span class="tag">REST API</span><span class="tag">Scientific Python (NumPy, Pandas, seaborn, matplotlib, scikit-learn, etc)</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Tools & DevOps</h3>
+        <div class="tags">
+          <span class="tag">Docker</span><span class="tag">Git/GitHub</span><span class="tag">Jira/Trello</span>
+          <span class="tag">Bash/PowerShell</span><span class="tag">CI/CD Pipelines</span> 
+          <span class="tag">VS Code</span><span class="tag">Android Studio</span><span class="tag">Netbeans</span>
+          <span class="tag">Jupyter Notebook</span><span class="tag">Google Colab</span><span class="tag">Cisco Packet Tracer</span>
+          <span class="tag">Figma/Draw.io</span><span class="tag">Postman</span><span class="tag">Omnet++</span>
+        </div>
+      </div>
 
-      <!-- Option A: Simple Unordered List -->
-      <ul>
-        <p><i class="fas fa-code"></i> Programming Languages: Python, C, Java, Javascript</p>
-        <p><i class="fas fa-globe"></i> Web Development: React.js, Node.js</p>
-        <p><i class="fas fa-cloud"></i> Cloud Computing: AWS, Azure</p>
-        <p><i class="fas fa-database"></i> Databases: Oracle SQL, MySQL, MongoDB</p>
-        <p><i class="fas fa-network-wired"></i> Networking: Cisco Packet Tracer (CCNA)</p>
-        <p><i class="fas fa-laptop-code"></i> Operating Systems: Windows,Linux (Ubuntu), Bash, Shell Script</p>
-      </ul>
+      <div class="skill-category">
+        <h3>Testing & Quality Assurance</h3>
+        <div class="tags">
+          <span class="tag">Unit Testing (xUnit, Jest, Junit, HIL)</span><span class="tag">Integration Testing</span><span class="tag">End-to-End Testing (Playwright)</span>
+          <span class="tag">GitHub Actions</span><span class="tag">Bug Tracking</span>
+          <span class="tag">API Testing</span><span class="tag">Smoke Testing</span>
+          <span class="tag">Boundary Testing</span><span class="tag">Test Documentation</span><span class="tag">Test-Driven-Development</span>
+          <span class="tag">Sprint Planning</span><span class="tag">Sprint Retrospective</span><span class="tag">Visualising QA and bug reporting process</span>
+        </div>
+      </div>
 
-      <!-- Option B: A Simple Table (if you prefer tabular layout) -->
-      <!--
-      <table class="skills-table">
-        <thead>
-          <tr>
-            <th>Skill Category</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Programming Languages</td>
-            <td>Python, C, Java</td>
-          </tr>
-          <tr>
-            <td>Web Development</td>
-            <td>React.js, Node.js</td>
-          </tr>
-          <tr>
-            <td>Cloud Computing</td>
-            <td>AWS (SAA-C03), Azure (AZ-204)</td>
-          </tr>
-          <tr>
-            <td>Databases</td>
-            <td>Oracle SQL, MySQL, MongoDB</td>
-          </tr>
-          <tr>
-            <td>Networking</td>
-            <td>Cisco Packet Tracer (CCNA)</td>
-          </tr>
-          <tr>
-            <td>Operating Systems</td>
-            <td>Linux (Ubuntu)</td>
-          </tr>
-        </tbody>
-      </table>
-      -->
-    </section>
+      <div class="skill-category">
+        <h3>Database</h3>
+        <div class="tags">
+          <span class="tag">SQL</span><span class="tag">NoSQL</span><span class="tag">MongoDB</span>
+          <span class="tag">OracleDB</span><span class="tag">MySQL</span><span class="tag">Embedded Database (DerbyDB)</span>
+          <span class="tag">Firebase</span><span class="tag">Data Modelling</span>
+        </div>
+      </div>
 
-    <hr />
+    </div>
+  </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <p><strong>CAPM</strong> (Certified Associate in Project Management), PMI</p>
-        <p><strong>AWS Solutions Architect – Associate</strong> (SAA-C03), AWS</p>
-        <p><strong>Azure Developer Associate</strong> (AZ-204), Microsoft</p>
-        <p><strong>CCNA</strong> (Cisco Certified Network Associate), Cisco</p>
-      </ul>
-      <!-- If you have dates, you can add them here, e.g. "Earned Feb 2024" -->
-    </section>
-  </div>
-
+  <section class="section-card">
+    <h2>Professional Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <strong>AWS Solutions Architect Associate</strong>
+        <p class="text-light">Earned Dec 2024 </p>
+      </div>
+      <div class="cert-card">
+        <strong>Cisco Certified Network Associate (CCNA)</strong>
+        <p class="text-light">Earned Nov 2024 </p>
+      </div>
+      <div class="cert-card">
+        <strong>Certified Associate in Project Management (CAPM)</strong>
+        <p class="text-light">Earned Feb 2024 </p>
+      </div>
+    </div>
+  </section>
+</main>
   <footer>
-    <p>&copy; 2025 Juchang Kim. All Rights Reserved.</p>
+    <p>&copy; 2026 Juchang Kim. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

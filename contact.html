@@ -1,84 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact Me</title>
-  <!-- Link to your main CSS file -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Optionally include Font Awesome for icons (free icons only) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - Juchang Kim</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <!-- Navigation bar (adjust links to your actual pages) -->
-  <nav class="navbar">
-    <a href="index.html" class="nav-box">Home</a>
-    <a href="about.html" class="nav-box">About Me</a>
-    <a href="skills.html" class="nav-box">Skills</a>
-    <a href="projects.html" class="nav-box">Projects</a>
-    <a href="contact.html" class="nav-box active">Contact</a>
-  </nav>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="skills.html" class="nav-item">Skills</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="contact.html" class="nav-item active">Contact</a>
+        </div>
+    </nav>
 
-  <!-- Main container for the contact info -->
-  <div class="main-content">
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out if you want to discuss opportunities, projects, or just want to connect!</p>
+    <main class="main-container">
+        <header class="hero-card">
+            <h1>Let's Connect</h1>
+            <p class="hero-bio">
+                I am currently based in Auckland and open to discussing roles in any jobs which align with my skills and interests.
+            </p>
+        </header>
 
-    <!-- Basic Contact Info -->
-    <section class="contact-list">
-      <p>
-        <i class="fas fa-envelope"></i>
-        <strong>Email:</strong>
-        <a href="mailto:brad193026@gmail.com">brad193026@gmail.com</a>
-      </p>
-      <br>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/juchang-kim" target="_blank">
-          linkedin.com/in/juchang-kim
-        </a>
-      </p>
-      <br>
-      <p>
-        <i class="fab fa-github"></i>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/JuchangKim" target="_blank">
-          github.com/JuchangKim
-        </a>
-      </p>
-      <br>
-      <p>
-        <i class="fab fa-hackerrank"></i>
-        <strong>HackerRank:</strong>
-        <!-- Replace with your actual HackerRank profile link -->
-        <a href="https://www.hackerrank.com/profile/brad193026" target="_blank">
-          hackerrank.com/profile/brad193026
-        </a>
-      </p>
-    </section>
-    <br>
+        <div class="contact-grid">
+            <section class="section-card">
+                <h2>Contact Information</h2>
+                <div class="contact-methods">
+                    <a href="mailto:brad193026@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> brad193026@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/juchang-kim/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/JuchangKim" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub Portfolio
+                    </a>
+                </div>
+            </section>
 
-    <h2>Send Me a Message</h2>
-    <form action="https://formspree.io/f/yourFormID" method="POST">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+            <section class="section-card">
+                <h2>Send a Message</h2>
+                <form class="modern-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="How can I help you?" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Juchang Kim. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 Juchang Kim. Built with CSS.</p>
+    </footer>
 </body>
 </html>

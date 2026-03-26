@@ -6,67 +6,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juchang Kim - Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="about.html" class="nav-box">About Me</a>
-    <a href="skills.html" class="nav-box">Skills</a>
-    <a href="projects.html" class="nav-box">Projects</a>
-    <a href="contact.html" class="nav-box">Contact Me</a>
-  </nav>
+      <div class="nav-links">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="skills.html" class="nav-item">Skills</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </div>
+    </nav>
 
-  <!-- Main Content -->
-  <div class="container">
-    <h1>Juchang Kim (JC)</h1>
-    <p>Education: Bachelor of Computer and Information Science <br>
-      (Major: Software Development, Minor: Cybersecurity and Network, Data Science)</p>
-    <p><strong>Current GPA:</strong> 7.84 / 9.0 </p>
-    
-    <h2>Skills</h2>
-    <p>
-      Programming Languages: Python, C, Java, Javascript<br />
-      Database: SQL (OracleSQL, MySQL), MongoDB<br />
-      Web Development: React.js, Node.js<br />
-      Cloud Computing: AWS, Azure<br />
-      Networking: Cisco Packet Tracer (CCNA Certified)<br />
-      Project Management Tools: Trello, Jira<br />
-    </p>
-
-    <h2>Certifications</h2>
-    <ul>
-      <p>- Cisco Certified Network Associate (CCNA)</p>
-      <p>- AWS Solutions Architect – Associate</p>
-      <p>- Azure Developer Associate</p>
-      <p>- CAPM (Certified Associate Project Management - Project Management)</p>
-    </ul>
-
-    <h2>Brief Explanations of Projects &amp; Research</h2>
-    <p>
-      <strong>HireHub (React, Node, MongoDB):</strong> A full-stack job-hunting platform featuring secure user authentication with JWT, CRUD for job postings, real-time search filters, and mobile-responsive design.  
-      <br /><br />
-
-      <strong>Poker Game (Java, OOP, Derby Database):</strong> A GUI-based card game with multiple computer players, leveraging embedded Derby DB for data persistence. It uses strong OOP principles and a custom MVC design pattern for maintainability.  
-      <br /><br />
-
-      <strong>Phone Virus Simulation (Java, Concurrency):</strong> Simulates a network of phones becoming infected by a virus, showcasing multithreading, synchronization for repair shop.  
-      <br /><br />
-
-      <strong>Path Finder (Java, Data Structures):</strong> A maze-like traversal system built on a binary tree representation. It uses recursion and stack-based traversal (DFS-like) to find the exit in the maze.  
-      <br /><br />
-
-      <strong>Foundation of Data Science (Python):</strong> Explores data visualization, pre-processing, feature selection, and classification models (Naive Bayes, KNN, ANN), employing EDA techniques and model evaluation metrics.  
-      <br /><br />
-
-      <strong>Data Analysis (Python):</strong> Focuses on regression analysis (linear, OLS) with hypothesis testing, correlation heatmaps, and assumption checks (normality, homoscedasticity).  
-      <br /><br />
-
-      <strong>Algorithm Research (Python, Currency Exchange):</strong> Investigates Bellman-Ford and Floyd-Warshall algorithms for directed graphs modeling currency exchange rates, including handling negative edge weights and detecting arbitrage opportunities.
-    </p>
+  <main class="main-container">
+<header class="hero-card">
+  <div class="hero-content">
+    <h1>Juchang Kim <span class="nickname">(JC)</span></h1>
+    <p class="hero-subtitle">Computer Science Graduate</p>
+    <div class="hero-bio">
+       <p>A highly disciplined professional leveraging a decade of high-pressure experience to build trustworthy digital environments and rigorous IT controls.</p>
+    </div>
+    <div class="gpa-badge">GPA: <strong>7.79 / 9.0</strong></div>
   </div>
+</header>
+
+  <section id="about" class="section-card">
+    <h2>Professional Profile</h2>
+    <p>
+      A highly disciplined Computer Science graduate with a decade of experience across technical research, military service, and hospitality. 
+      I leverage the precision and high-pressure adaptability developed as a Chef De Partie to build trustworthy digital environments and rigorous IT controls.
+    </p>
+  </section>
+
+  <section id="skills" class="section-card">
+    <h2>Technical Skills Matrix</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Programming & Frameworks</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+          <span class="tag">C# (.NET)</span><span class="tag">React.js</span><span class="tag">Node.js</span>
+          <span class="tag">PHP</span><span class="tag">Kotlin</span><span class="tag">C</span>
+        </div> 
+      </div>
+      <div class="skill-category">
+        <h3>Cloud & Infrastructure</h3>
+        <div class="tags">
+          <span class="tag">AWS (SAA)</span><span class="tag">Azure</span><span class="tag">Linux/Ubuntu</span>
+          <span class="tag">Docker</span><span class="tag">CI/CD (GitHub Actions)</span>
+        </div> 
+      </div>
+      <div class="skill-category">
+        <h3>Testing & Databases</h3>
+        <div class="tags">
+          <span class="tag">TDD/Unit Testing</span><span class="tag">Jest/xUnit</span><span class="tag">Playwright</span>
+          <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-card">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card featured">
+        <div class="award-tag">🏆 Top Project Award (2025)</div>
+        <h3>Office Sign-In Tool (R&D)</h3>
+        <p class="tech-stack">Kotlin Android • React/TS • C# • Firebase</p>
+        <p>Led a visitor management system for Fiserv. Implemented BDD, vertical slicing, and automated CI pipelines.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>HireHub</h3>
+        <p class="tech-stack">React • Node • MongoDB • Azure</p>
+        <p>Full-stack job platform with JWT authentication and CI/CD deployment to Azure App Service.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Currency Arbitrage Research</h3>
+        <p class="tech-stack">Python • Graph Theory</p>
+        <p>Implemented Bellman-Ford and Floyd-Warshall to detect negative cycles in currency exchange rates.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2>Professional Experience Highlights</h2>
+    <div class="experience-item">
+      <h3>Peer Mentor | AUT</h3>
+      <p>Translated complex technical concepts for students to foster a culture of belonging.</p>
+    </div>
+    <div class="experience-item">
+      <h3>Chef De Partie | Gengy's</h3>
+      <p>Orchestrated high-pressure operations and production lifecycles, balancing technical execution with strict deadlines.</p>
+    </div>
+  </section>
+</main>
 
   <footer>
-    &copy; 2025 Juchang Kim. All rights reserved.
+    <p>&copy; 2026 Juchang Kim. Built with modern CSS.</p>
   </footer>
 </body>
 </html>
